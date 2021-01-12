@@ -18,16 +18,23 @@ function runTheNumbers(num1, num2){
     for (let loop = num1; loop <= num2; loop++) {
     
     if(loop % 15 === 0){
-        document.getElementById("results").innerText += ` FizzBuzz `
+        document.getElementById("results").innerText += `FizzBuzz-`
    
     }else if (loop % 3 === 0){
-        document.getElementById("results").innerText += ` Fizz `
+        document.getElementById("results").innerText += `Fizz-`
     }else if (loop % 5 === 0){
-        document.getElementById("results").innerText += ` Buzz `
+        document.getElementById("results").innerText += `Buzz-`
     }else{
-         document.getElementById("results").innerText += ` ${loop} `
+         document.getElementById("results").innerText += `${loop}-`
     }
     
     }
 }
 
+document.getElementById("btnClear").addEventListener("click", function(){
+      
+     
+    document.getElementById('results').innerText = "";
+
+
+});

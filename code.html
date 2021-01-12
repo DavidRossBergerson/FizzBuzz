@@ -8,7 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="css/fizzbuzz.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+</head>
   <body>
       <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #212121;">
           <a class="navbar-brand" href="code.html">Fizzbuzz</a>
@@ -37,20 +39,64 @@
 
       <div class="jumbotron jumbotron-fluid">
           <div class="container">
-              <h1 class="display-3">FizzBuzz</h1>
-              <p class="lead">Source Code</p>
+              <h1 class="display-3">FizzBuzz Code</h1>
+              <p class="lead">This is the JavaScript I wrote for FizzBuzz.</p>
               <hr class="my-2">
-              <p>Click Here</p>
-              <p class="lead">
-                  <a class="btn btn-primary btn-lg" href= role="button">Jumbo action name</a>
-              </p>
+              
+              
           </div>
       </div>
 
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                   
+        <pre class ="line-numbers"><code class="language-javascript">
+    // This uses an anonymous function to call a named function
+    document.getElementById("fizzButton").addEventListener("click", function(){
+        let num1 = 1
+        let num2 = 100
+    if(num1 > num2){
+        alert("Number 1 must be less than Number 2");
+    }else{
+        runTheNumbers(num1, num2)
+        }
+});
+
+    // This is the named function, it will only run when something else calls it
+    function runTheNumbers(num1, num2){
+        for (let loop = num1; loop <= num2; loop++) {
+        
+        if(loop % 15 === 0){
+            document.getElementById("results").innerText += `FizzBuzz-`
+        }else if (loop % 3 === 0){
+            document.getElementById("results").innerText += `Fizz-`
+        }else if (loop % 5 === 0){
+            document.getElementById("results").innerText += `Buzz-`
+        }else{
+            document.getElementById("results").innerText += `${loop}-`
+            }
+        }
+    }
+
+    document.getElementById("btnClear").addEventListener("click", function(){
 
 
+    document.getElementById('results').innerText = "";
 
+});
+    
+            </code>
+          </pre>
+    
+            </div>
+        </div>
+    </div>
 
+        
+
+      
+       
 
 
     <!-- Optional JavaScript -->
@@ -58,5 +104,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="js/prism.js"></script>  
+    </body>
 </html>
