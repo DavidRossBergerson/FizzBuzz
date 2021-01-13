@@ -36,9 +36,7 @@
     }
 }
 
-document.getElementById("btnClear").addEventListener("click", function(){
-      
-     
+    document.getElementById("btnClear").addEventListener("click", function(){
     document.getElementById('results').innerText = "";
 
 
