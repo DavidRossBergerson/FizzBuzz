@@ -42,20 +42,19 @@
       <div class="jumbotron jumbotron-fluid">
           <div class="container pt-5 offset-2">
               <h1 class="display-3">FizzBuzz</h1>
-              <p class="lead">Here, I have taken the numbers from one to one-hundred. The multiples of three are replaced with the word "Fizz". The multiples of five are replaced with the word "buzz". The multiples of both three and five(fifteen) are replaced with the word "FizzBuzz". </p>
+              <p class="lead">Put a number the Fizz field and another in the Buzz field. Click the FizzBuzz button, and see witch numbers FizzBuzz. </p>
               <hr class="my-2">
               <p>Click below to try it out.</p>
           </div>
       </div>
 
-      <div class="container pt-5">
+      <div class="container container-fluid pt-5" style="">
         <div class="row">
             <div class="col form-group">
-                <input class="form-control" id="input1"  value=""
-                    type="number" />
+                <input class="form-control" id="input1"  placeholder="Fizz" value=""type="number" />
             </div>
             <div class="col form-group">
-                <input class="form-control" id="input2" value="" type="number" />
+                <input class="form-control" id="input2"  placeholder="Buzz" value="" type="number" />
             </div>
         </div>
         <div class="row">
@@ -76,7 +75,7 @@
             <div class="col-4 offset-4">
                 <p id="clickMe">Results</p>
                 <hr />
-                <p id="results"></p>
+                <div id="results" style="max-height: 25%;"></div>
             </div>
         </div>
     </div>

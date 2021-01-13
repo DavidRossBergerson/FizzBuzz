@@ -37,7 +37,6 @@
 }
 
     document.getElementById("btnClear").addEventListener("click", function(){
-    document.getElementById('results').innerText = "";
-
-
+    document.getElementById('results').innerText = ""
+    
 });
