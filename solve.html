@@ -49,23 +49,37 @@
       </div>
 
       <div class="container pt-5">
-        <div class="row">   
+        <div class="row">
+            <div class="col form-group">
+                <input class="form-control" id="input1"  value=""
+                    type="number" />
+            </div>
+            <div class="col form-group">
+                <input class="form-control" id="input2" value="" type="number" />
+            </div>
+        </div>
+        <div class="row">
             <div class="col-6 offset-3 form-group">
-                <button class="btn btn-outline-success btnWide" id="fizzButton">Try FizzBuzz</button>
-                </div>
-                <div class="col-6 offset-3 form-group">
-                    <button id="btnClear" class="btn btn-danger btnWide">Clear</button>
+                <button class="btn btn-outline-success btnWide" id="fizzButton">FizzBuzz!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3 form-group">
+                <div class="row">
+                    <div class="col-6 offset-3 form-group">
+                        <button class="btn btn-outline-primary btnWide" id="btnClear">clear</button>
                     </div>
+                </div>
+            </div>
         </div>
-    <div class="row">
-        <div class="col-4 offset-3">
-            <p>Results</p>
-            <hr />
-            <p id="results" style="text-indent: 0%;"></p>
+        <div class="row">
+            <div class="col-4 offset-4">
+                <p id="clickMe">Results</p>
+                <hr />
+                <p id="results"></p>
+            </div>
         </div>
     </div>
-    </div>
-
 
 
 
