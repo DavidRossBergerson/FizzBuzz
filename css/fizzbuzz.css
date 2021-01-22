@@ -37,4 +37,11 @@ p{
             display: flex;
         }
     }
+
+    .table{
+        table-layout: auto;
+        border-width: 2px;
+        border-color: skyblue;
+    }
     
+   
