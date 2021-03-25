@@ -17,7 +17,7 @@ p{
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+
     header{
         background-image: url("/img/fizzbuzzheader.jpg");
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@ p{
             justify-content: center;
             display: flex;
         }
-    }
+    
 
     .table{
         table-layout: auto;

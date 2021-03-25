@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fizzbuzz.css"/>
     <link rel="stylesheet" href="css/prism.css"/>
-  </head>
-  <body>
+</head>
+  
+<body style="font-size:larger; ">
       
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #212121;">
           <a class="navbar-brand" href="index.html">FizzBuzz</a>
@@ -19,12 +20,10 @@
               aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <li class="nav-item active">
+                  <li class="nav-item active ">
                       <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="solve.html">Solve</a>
-                  </li>
+                 
                   <li class="nav-item">
                     <a class="nav-link" href="code.html">Code</a>
                 </li>
@@ -37,18 +36,54 @@
               </ul>
           </div>
       </nav>
+
       <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-3">FizzBuzz</h1>
-          <p class=>"FizzBuzz" is a word association game. Players take turns counting incrementally, replacing any number divisible by three with the word "Fizz", and any number divisible by five with the word "Buzz". If the number is divisible by three and five(fifteen), the player replaces it with the word "FizzBuzz".</p>
-          <hr class="my-2">
-          <p>Head over to the solve page to try out some other numbers.</p>
+          <div class="container pt-5 offset-2">
+              <h1 class="display-3">FizzBuzz</h1>
+              <p>"FizzBuzz" is a word association game. 
+                  Players take turns counting incrementally, replacing any number divisible by three with the word "Fizz", and any number divisible by five with the word "Buzz". 
+                  If the number is divisible by three and five(fifteen), the player replaces it with the word "FizzBuzz".
+                  <br>Put a number in the Fizz field and another in the Buzz field. Click the FizzBuzz button, and see witch numbers FizzBuzz. </p>
+              
+              <p>Try it out!</p>
+          </div>
+        </header>
+
+      <div class="container container-fluid pt-5">
+        <div class="row">
+            <div class="col form-group">
+                <input class="form-control" id="input1"  placeholder="Fizz" value=""type="number" />
+            </div>
+            <div class="col form-group">
+                <input class="form-control" id="input2"  placeholder="Buzz" value="" type="number" />
+            </div>
         </div>
-      </header>
+        <div class="row">
+            <div class="col-6 offset-3 form-group">
+                <button class="btn btn-outline-success btnWide" id="fizzButton">FizzBuzz!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3 form-group">
+                <div class="row">
+                    <div class="col-6 offset-3 form-group">
+                        <button class="btn btn-outline-primary btnWide" id="btnClear">clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-4">
+                <p id="clickMe">Results</p>
+                <hr />
+                <table class="table table-bordered table-striped">
+                    <tbody id="results">
 
-
-
-
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -57,6 +92,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/fizzbuzz.js"></script>
     <script src="js/prism.js"></script>  
-  </body>
+    </body>
 </html>
